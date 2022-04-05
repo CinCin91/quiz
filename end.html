@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Congrats!</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/app.css" />
+  </head>
+  <body>
+      <div id="end" class="text-center">
+        <h1 id="finalScore"></h1>
+        <form>
+          <input type="text" name="username" class="form-control" id="username" placeholder="username"/>
+          <button type="submit" class="btn btn-success" id="saveScoreBtn" onclick="saveHighScore(event)" disabled>Save</button><br/><br/>
+        </form>
+        <a class="btn btn-primary" href="game.html">Play Again</a><br/><br/>
+        <a class="btn btn-primary" href="index.html">Go Home</a>
+      </div>
+    <script src="js/end.js"></script>
+  </body>
+</html>

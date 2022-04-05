@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    background: linear-gradient(5deg, #dc3545, #406f1c00);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+#game {
+    color: #fff;
+    width: 700px
+}
+#twoBlocks {
+    display: flex;
+    justify-content: space-between;
+}
+.textClass {
+    text-align: center;
+    font-size: 30px;
+}
+#progressBar {
+    width: 350px;
+    height: 40px;
+    border: 1px solid #56a5eb;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+#progressBarFull {
+    height: 38px;
+    background: #56a5eb;
+    border-radius: 10px;
+    width: 0%;
+}
+.textClassH1 {
+    text-align: center;
+}
+
+/* pitanja */
+.choices {
+    display: flex;
+    margin-bottom: 15px;
+    width: 100%;
+    font-size: 23px;
+    border: 2px solid #56a5eb;
+    background: #fff;
+    height: 70px;
+}
+.choices-prefix {
+    padding: 20px 30px;
+    background: #56a5eb;
+    color: #fff;
+    margin-bottom: 0 !important;
+}
+.choices-text {
+    padding: 15px;
+    width: 100%;
+    background: #56a5eb9c;
+    margin-bottom: 0;
+}
+
+.correct {
+    background: green;
+}
+.incorrect {
+    background: red;
+}
+
+/* loader */
+#loader {
+    border: 1.6rem solid white;
+    border-radius: 50%;
+    border-top: 1.6rem solid #56a5eb;
+    width: 12rem;
+    height: 12rem;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
